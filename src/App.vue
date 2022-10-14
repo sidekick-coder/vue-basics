@@ -1,5 +1,10 @@
+<script setup>
+function onClick() {
+  alert("click");
+}
+</script>
 <template>
   <div class="flex items-center justify-center h-screen w-screen">
-    <h1 class="text-4xl text-teal-500 font-bold">Hello word</h1>
+    <v-btn @click="onClick">Hello word</v-btn>
   </div>
 </template>
