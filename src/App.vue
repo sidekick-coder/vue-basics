@@ -1,10 +1,12 @@
 <script setup>
-function onClick() {
-  alert("click");
-}
+import { ref } from "vue";
+
+const name = ref("");
 </script>
 <template>
   <div class="flex items-center justify-center h-screen w-screen">
-    <v-btn @click="onClick">Hello word</v-btn>
+    <v-input id="name" label="Name" v-model="name" />
+
+    {{ name }}
   </div>
 </template>
